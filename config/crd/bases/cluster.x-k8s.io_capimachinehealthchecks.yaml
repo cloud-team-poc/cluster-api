@@ -6,7 +6,7 @@ metadata:
   annotations:
     controller-gen.kubebuilder.io/version: v0.6.2
   creationTimestamp: null
-  name: machinehealthchecks.cluster.x-k8s.io
+  name: capimachinehealthchecks.cluster.x-k8s.io
 spec:
   group: cluster.x-k8s.io
   names:
@@ -14,11 +14,11 @@ spec:
     - cluster-api
     kind: MachineHealthCheck
     listKind: MachineHealthCheckList
-    plural: machinehealthchecks
+    plural: capimachinehealthchecks
     shortNames:
     - mhc
     - mhcs
-    singular: machinehealthcheck
+    singular: capimachinehealthcheck
   scope: Namespaced
   versions:
   - additionalPrinterColumns:

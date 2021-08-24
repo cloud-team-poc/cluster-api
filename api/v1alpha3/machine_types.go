@@ -236,7 +236,7 @@ type Bootstrap struct {
 // ANCHOR_END: Bootstrap
 
 // +kubebuilder:object:root=true
-// +kubebuilder:resource:path=machines,shortName=ma,scope=Namespaced,categories=cluster-api
+// +kubebuilder:resource:path=capimachines,shortName=ma,scope=Namespaced,categories=cluster-api,singular=capimachine
 // +kubebuilder:subresource:status
 // +kubebuilder:printcolumn:name="ProviderID",type="string",JSONPath=".spec.providerID",description="Provider ID"
 // +kubebuilder:printcolumn:name="Phase",type="string",JSONPath=".status.phase",description="Machine status such as Terminating/Pending/Running/Failed etc"

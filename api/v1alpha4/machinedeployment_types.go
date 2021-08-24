@@ -260,7 +260,7 @@ func (md *MachineDeploymentStatus) GetTypedPhase() MachineDeploymentPhase {
 }
 
 // +kubebuilder:object:root=true
-// +kubebuilder:resource:path=machinedeployments,shortName=md,scope=Namespaced,categories=cluster-api
+// +kubebuilder:resource:path=capimachinedeployments,shortName=md,scope=Namespaced,categories=cluster-api,singular=capimachinedeployment
 // +kubebuilder:storageversion
 // +kubebuilder:subresource:status
 // +kubebuilder:subresource:scale:specpath=.spec.replicas,statuspath=.status.replicas,selectorpath=.status.selector

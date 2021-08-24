@@ -6,7 +6,7 @@ metadata:
   annotations:
     controller-gen.kubebuilder.io/version: v0.6.2
   creationTimestamp: null
-  name: clusters.cluster.x-k8s.io
+  name: capiclusters.cluster.x-k8s.io
 spec:
   group: cluster.x-k8s.io
   names:
@@ -14,10 +14,10 @@ spec:
     - cluster-api
     kind: Cluster
     listKind: ClusterList
-    plural: clusters
+    plural: capiclusters
     shortNames:
     - cl
-    singular: cluster
+    singular: capicluster
   scope: Namespaced
   versions:
   - additionalPrinterColumns:

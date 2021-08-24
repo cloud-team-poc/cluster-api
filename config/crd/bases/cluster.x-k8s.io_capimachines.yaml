@@ -6,7 +6,7 @@ metadata:
   annotations:
     controller-gen.kubebuilder.io/version: v0.6.2
   creationTimestamp: null
-  name: machines.cluster.x-k8s.io
+  name: capimachines.cluster.x-k8s.io
 spec:
   group: cluster.x-k8s.io
   names:
@@ -14,10 +14,10 @@ spec:
     - cluster-api
     kind: Machine
     listKind: MachineList
-    plural: machines
+    plural: capimachines
     shortNames:
     - ma
-    singular: machine
+    singular: capimachine
   scope: Namespaced
   versions:
   - additionalPrinterColumns:

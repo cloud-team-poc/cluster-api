@@ -185,7 +185,7 @@ func (m *MachineSet) Validate() field.ErrorList {
 }
 
 // +kubebuilder:object:root=true
-// +kubebuilder:resource:path=machinesets,shortName=ms,scope=Namespaced,categories=cluster-api
+// +kubebuilder:resource:path=capimachinesets,shortName=ms,scope=Namespaced,categories=cluster-api,singular=capimachineset
 // +kubebuilder:storageversion
 // +kubebuilder:subresource:status
 // +kubebuilder:subresource:scale:specpath=.spec.replicas,statuspath=.status.replicas,selectorpath=.status.selector
